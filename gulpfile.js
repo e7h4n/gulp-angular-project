@@ -63,7 +63,6 @@ function scripts() {
     var scriptFiles = gulp.src([
         SRC + '**/*.js',
         '!' + SRC + 'node_modules/**/*.*',
-        '!' + SRC + 'bin/**/*.*',
         '!' + SRC + '**/gulpfile.js',
         '!' + BUILD + '**/*.*',
     ], {

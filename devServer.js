@@ -6,7 +6,7 @@ var express = require('express');
 var app = express();
 var serveStatic = require('serve-static');
 var gulp = require('gulp');
-var gulpfile = require('../gulpfile');
+var gulpfile = require('./gulpfile');
 var order = require('gulp-order');
 var through = require('through');
 var path = require('path');
@@ -35,7 +35,6 @@ app.get('/app.js', function (req, res) {
     gulp.src([
         gulpfile.SRC + '**/*.js',
         '!' + gulpfile.SRC + 'node_modules/**/*.*',
-        '!' + gulpfile.SRC + 'bin/**/*.*',
         '!' + gulpfile.SRC + '**/gulpfile.js',
         '!' + gulpfile.BUILD + '**/*.*',
     ], {
