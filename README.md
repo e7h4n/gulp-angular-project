@@ -42,7 +42,7 @@ node bin/devServer.js
 gulp [--cdn CDN_PATH]
 ```
 
-之后所有文件会打到 `dist` 目录下。如果通过 `--cdn` 制定了 `CDN_PATH`，那么所有静态文件前面都会多一个 `CDN_PATH` 作为前缀。
+之后所有文件会打到 `dist` 目录下。如果通过 `--cdn` 指定了 `CDN_PATH`，那么所有静态文件前面都会多一个 `CDN_PATH` 作为前缀。
 
 打包完之后把整个 `dist` 目录通过你喜欢的工具传到服务器上，就行了，这个项目在线上环境是纯静态的，不需要 node 也不需要 java 什么的，有 nginx 就够了。
 
