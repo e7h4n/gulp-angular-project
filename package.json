@@ -3,7 +3,7 @@
   "description": "Angular project build script of gulp",
   "license": "MIT",
   "repository": "ssh+https://github.com/perfectworks/angular-sample.git",
-  "devDependencies": {
+  "dependencies": {
     "debug": "^2.2.0",
     "del": "^2.2.0",
     "express": "^4.13.4",
